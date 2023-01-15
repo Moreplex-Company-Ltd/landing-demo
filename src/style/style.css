@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* tailwind classes here */
+
+/* announcement header */
+.announcement {
+  @apply bg-primaryBlue flex justify-between;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 27px;
+  font-weight: var(--body-font-weight);
+  color: white;
+  padding: 4px 0px;
+}
+
+.currency-list-option {
+  @apply flex mb-2;
+}
+
+.flag {
+  min-width: 20px;
+  max-width: 20px;
+  margin-right: 3px;
+}
+
+.overlayy {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* hero slider */
+.hero-slider-button {
+  @apply px-2 py-3;
+}
+
+.header-text-1 {
+  @apply text-primaryBlue font-bold text-xl sm:text-4xl uppercase;
+}
+
+.subheader-text-1 {
+  @apply font-medium mt-2 text-base;
+}
+
+.brand-bar {
+  @apply h-full w-2 bg-gradient-to-b from-primaryGold via-yellow-300 to-primaryGold;
+}
+
+.brand-bar-horizontal {
+  @apply bg-gradient-to-r from-primaryGold via-yellow-300 to-primaryGold h-1.5;
+}
